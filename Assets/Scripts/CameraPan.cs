@@ -16,7 +16,7 @@ public class CameraPan : MonoBehaviour
         if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
             Vector2 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
-            Vector3 moveVector = new Vector3(-touchDeltaPosition.x, -touchDeltaPosition.y, 0) * panSpeed * Time.deltaTime;
+            Vector3 moveVector = new Vector3(-touchDeltaPosition.x, 0, -touchDeltaPosition.y) * panSpeed * Time.deltaTime;
             transform.Translate(moveVector, Space.World);
         }
     }
