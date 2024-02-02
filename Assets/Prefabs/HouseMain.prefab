@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1561827436726305920}
+  - component: {fileID: 5469083067526286304}
   m_Layer: 0
   m_Name: HouseMain
   m_TagString: Untagged
@@ -34,6 +35,33 @@ Transform:
   - {fileID: 3945302547925730582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5469083067526286304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8208896961684761219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97a84233de588f44bfaba1b79cb1133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultConsumption: 0
+  currentTier: 0
+  people: 0
+  buidingTiers:
+  - minPeople: 1
+    maxPeople: 5
+    tierVisual: {fileID: 119633571107150509}
+  - minPeople: 6
+    maxPeople: 0
+    tierVisual: {fileID: 0}
+  - minPeople: 0
+    maxPeople: 0
+    tierVisual: {fileID: 0}
+  peopleConsumptionMultiplyer: 0
+  isConnectedToGrid: 0
 --- !u!1001 &120805949665986501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,6 +122,12 @@ PrefabInstance:
 --- !u!4 &117826560296678195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4410136224249078, guid: aba168a0966599544980000f122159b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 120805949665986501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &119633571107150509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1185575685447016, guid: aba168a0966599544980000f122159b4,
     type: 3}
   m_PrefabInstance: {fileID: 120805949665986501}
   m_PrefabAsset: {fileID: 0}
